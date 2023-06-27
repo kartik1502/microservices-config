@@ -6,3 +6,31 @@ eureka:
     register-with-eureka: true
     service.uri:
       defaultZone: http://localhost:8761/eureka
+
+spring:
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    properties:
+      username: root
+      password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  config:
+    import: configserver:http://localhost:8083
+
+logging:
+  level:
+    web: debug
+    org.springframework.web: info
+    org.training: error
+
+  logback:
+    rollingpolicy:
+      max-file-size: 1MB
