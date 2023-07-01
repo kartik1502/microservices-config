@@ -6,3 +6,9 @@ eureka:
     register-with-eureka: true
     service.uri:
       defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    responseCode: 200
+    bad_request: 403
+    conflict: 409
