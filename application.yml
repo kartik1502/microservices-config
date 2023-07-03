@@ -12,3 +12,4 @@ spring:
     responseCode: 200
     bad_request: 403
     conflict: 409
+    not_found: 404
