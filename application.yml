@@ -13,3 +13,12 @@ spring:
     bad_request: 403
     conflict: 409
     not_found: 404
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
