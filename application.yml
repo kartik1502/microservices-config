@@ -13,6 +13,7 @@ spring:
     bad_request: 403
     conflict: 409
     not_found: 404
+    not_acceptable: 406
 
 management:
   endpoints:
